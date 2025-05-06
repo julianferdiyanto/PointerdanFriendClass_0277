@@ -10,3 +10,10 @@ private:
 public:
     friend void setNama(mahasiswa &a, string);
 };
+
+int main()
+{
+    mahasiswa joko;
+    setNama (joko, "Kairi Kumar");
+    return 0;
+}
