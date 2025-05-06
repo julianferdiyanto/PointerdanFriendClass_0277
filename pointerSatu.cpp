@@ -10,3 +10,18 @@ class mahasiswa
         cout << "No induk = " << nim << endl;
     }
 };
+
+int main()
+{
+    mahasiswa mhs{1}; // Object mhs
+    mhs.showNim(); // Member Access Operator 
+
+    mahasiswa &refMhs = mhs; // Pointer Reference reMhs
+    refMhs.nim = 2; 
+    mhs.showNim();
+
+    mahasiswa *pMhs = &mhs;
+    pMhs->nim = 3;
+    pMhs->showNim();
+    return 0;
+}
